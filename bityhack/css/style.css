@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #edc9af;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+nav {
+  position: relative;
+  background-color: #add8e6;
+  position: sticky;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+  background-color: #ddd;
+  z-index: 10;
+}
+
+.nav-items {
+  display: none;
+}
+
+.icon {
+  position: absolute;
+  top: 30px;
+  transform: translate(-50%, -50%);
+}
+
+.tiktok {
+  left: 20%;
+}
+
+.linkedin {
+  left: 40%;
+}
+
+.facebook {
+  left: 60%;
+}
+
+.instagram {
+  left: 80%;
+}
+
+@media (min-width: 768px) {
+  .nav-items {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
