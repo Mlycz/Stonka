@@ -4,7 +4,7 @@
 	padding: 0;
 }
 body {
-	background-color: #edc9af;
+	background-color: #333;
 }
 
 .wrapper {
@@ -15,23 +15,28 @@ body {
 // nav
 nav {
 	position: relative;
-	background-color: #add8e6;
+	background-color: #333;
 	position: sticky;
 	top: 0;
 	height: 60px;
 	line-height: 60px;
-	background-color: #ddd;
 	z-index: 10;
 }
-.nav-items {
+
+.nav-items a {
 	display: none;
 }
 .icon {
 	position: absolute;
-	top: 30px;
+	top: 60px;
 	transform: translate(-50%, -50%);
+	line-height: 60px;
+	font-size: 30px;
+	color: white;
+	background: none;
+	border: none;
+	cursor: pointer;
 }
-
 .tiktok {
 	left: 20%;
 }
@@ -47,7 +52,30 @@ nav {
 
 // media
 @media (min-width: 768px) {
-	.nav-items {
-		display: block;
+	.nav-items a {
+		
+		top: 60px;
+        display: inline-block;
+        text-decoration: none;
+
+        color: white;
+		line-height: 60px;
+		font-size: 30px;
+       
+        
+
+	}
+	.tiktok {
+		left: 81%;
+	}
+	.linkedin {
+		left: 84%;
+	}
+	.facebook {
+		left: 87%;
+	}
+	.instagram {
+		left: 90%;
 	}
 }
+
