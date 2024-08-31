@@ -43,6 +43,9 @@ position: absolute;
 	border: none;
 	cursor: pointer;
 }
+nav button a i {
+	color: white;
+}
 
 .tiktok {
   left: 20%;
