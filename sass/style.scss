@@ -539,11 +539,20 @@ section {
 	height: 55%;
 	background-color: #135;
 }
-img {
-	margin: 5% auto;
-	width: 90%;
-	height: 55%;
-	background-color: #135;
+.image1{
+	background-image: url('../img/Zuza.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.image2{
+	background-image: url('../img/Lipkowski.JPG');
+	background-size: cover;
+	background-position: center;
+}
+.image4{
+	background-image: url('../img/Pimpek.JPG');
+	background-size: cover;
+	background-position: center;
 }
 .personal-info {
 	position: relative;
@@ -600,9 +609,17 @@ img {
 }
 .info::before {
 	left: 0;
+	background-image: url('../img/icon-384x384.png');
+	background-size: 19vw;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .info::after {
 	right: 0;
+	background-image: url('../img/best_logo-b47bdf286af2a53b8678a9f95997babc.png');
+	background-size: 21vw;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 // media
@@ -769,6 +786,11 @@ img {
 		.mail {
 			font-size: 0.75rem;
 		}
+	}
+
+	.partner-logo{
+		width: 80px;
+		height: 80px;
 	}
 }
 
