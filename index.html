@@ -9,6 +9,7 @@
     <link rel="icon" href="./img/icon-384x384.png" type="jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
@@ -125,36 +126,38 @@
                 <p>Partner główny</p>
             </div>
             <div class="partner-wrap">
-                <div class="partner-logo"></div>
+                <div data-aos="zoom-in-up" class="partner-logo"></div>
             </div>
 
             <div class="title">
                 <p>Partnerzy wydarzenia</p>
             </div>
             <div class="partner-wrap">
-                <div class="partner-logo"></div>
-                <div class="partner-logo"></div>
-                <div class="partner-logo"></div>
-                <div class="partner-logo"></div>
-                <div class="partner-logo"></div>
+                <div data-aos="zoom-in-up" class="partner-logo"></div>
+                <div data-aos="zoom-in-up" class="partner-logo"></div>
+                <div data-aos="zoom-in-up" class="partner-logo"></div>
+                <div data-aos="zoom-in-up" class="partner-logo"></div>
+                <div data-aos="zoom-in-up" class="partner-logo"></div>
             </div>
 
             <div class="title">
                 <p>Partnerzy medialni</p>
             </div>
-            <div class="partner-wrap">
-                <div class="partner-logo"></div>
-                <div class="partner-logo"></div>
-                <div class="partner-logo"></div>
-                <div class="partner-logo"></div>
-                <div class="partner-logo"></div>
+            <div data-aos="zoom-in-up" class="partner-wrap">
+                <div data-aos="zoom-in-up" class="partner-logo"></div>
+                <div data-aos="zoom-in-up" class="partner-logo"></div>
+                <div data-aos="zoom-in-up" class="partner-logo"></div>
+                <div data-aos="zoom-in-up" class="partner-logo"></div>
+                <div data-aos="zoom-in-up" class="partner-logo"></div>
             </div>
+
+
 
             <div class="title">
                 <p>Partner społeczny</p>
             </div>
             <div class="partner-wrap">
-                <div class="partner-logo"></div>
+                <div data-aos="zoom-in-up" class="partner-logo"></div>
             </div>
         </section>
 
@@ -262,7 +265,15 @@
 
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            offset: 500,
+            once: true,
+        });
+    </script>
 </body>
 
 </html>
