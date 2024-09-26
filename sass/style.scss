@@ -9,10 +9,11 @@ body {
 	background-position: center; /* Możesz ustawić dowolną pozycję */
 	background-repeat: no-repeat; /* Zapobiega powtarzaniu */
 	background-attachment: fixed; /* Tło nie przesuwa się podczas przewijania */
-	
+
 	font-family: 'Chakra Petch', sans-serif;
-	background-image: url('../Background/1x/Layer1.png'), url('../Background/1x/Layer2.png'),
-		url('../Background/1x/Layer3.png'), url('../Background/1x/Layer4.png'), url('../Background/1x/Layer5.png'),
+	background-image: url('../Background/1x/Layer1.png'),
+		url('../Background/1x/Layer2.png'), url('../Background/1x/Layer3.png'),
+		url('../Background/1x/Layer4.png'), url('../Background/1x/Layer5.png'),
 		url('../Background/1x/Layer6.png');
 }
 
@@ -104,16 +105,16 @@ section {
 }
 
 .back-animation {
-    position: relative;
-    display: block;
-    margin-top: 30px;
-    width: 300px;
-    height: 300px; /* Użyj tej samej wartości dla szerokości i wysokości */
-    left: 50%;
-    transform: translate(-50%);
-    border-radius: 50%; /* Kształt koła */
-    overflow: hidden; /* Ukrycie krawędzi */
-    object-fit: cover; /* Przycięcie wideo, aby wypełnić okrąg */
+	position: relative;
+	display: block;
+	margin-top: 30px;
+	width: 300px;
+	height: 300px; /* Użyj tej samej wartości dla szerokości i wysokości */
+	left: 50%;
+	transform: translate(-50%);
+	border-radius: 50%; /* Kształt koła */
+	overflow: hidden; /* Ukrycie krawędzi */
+	object-fit: cover; /* Przycięcie wideo, aby wypełnić okrąg */
 }
 
 .date {
@@ -214,150 +215,147 @@ section {
 // }
 /* Pasek z przyciskami */
 .stripe {
-    display: flex;
-    gap: 2vw; /* Dynamiczna przestrzeń między przyciskami dla małych i średnich ekranów */
-    justify-content: center; /* Wyśrodkowanie przycisków */
-    align-items: center; /* Wyśrodkowanie w pionie */
-    margin-top: 2vw;
-    background-color: #555;
-    padding: 1vw;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 2vw; /* Zaokrąglone krawędzie */
-    width: 80vw; /* Pasek zajmuje 80% szerokości okna */
-    max-width: 1200px; /* Maksymalna szerokość paska */
-    height: auto; /* Dynamiczna wysokość */
-    margin-left: auto;
-    margin-right: auto; /* Wyśrodkowanie paska przycisków */
+	display: flex;
+	gap: 2vw; /* Dynamiczna przestrzeń między przyciskami dla małych i średnich ekranów */
+	justify-content: center; /* Wyśrodkowanie przycisków */
+	align-items: center; /* Wyśrodkowanie w pionie */
+	margin-top: 2vw;
+	background-color: #555;
+	padding: 1vw;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 2vw; /* Zaokrąglone krawędzie */
+	width: 80vw; /* Pasek zajmuje 80% szerokości okna */
+	max-width: 1200px; /* Maksymalna szerokość paska */
+	height: auto; /* Dynamiczna wysokość */
+	margin-left: auto;
+	margin-right: auto; /* Wyśrodkowanie paska przycisków */
 }
 
 /* Przycisk na pasku */
 .stripe p {
-    flex-grow: 1; /* Przycisk zajmuje dostępne miejsce */
-    text-align: center;
-    cursor: pointer;
-    color: white;
-    padding: 1vw 2vw; /* Dynamiczne odstępy wewnętrzne */
-    background-color: #777;
-    transition: background-color 0.3s;
-    font-size: 2vw; /* Dynamiczna wielkość czcionki zależna od ekranu */
-    border-radius: 1vw; /* Zaokrąglenie przycisków */
-    min-width: 100px; /* Minimalna szerokość przycisków */
-    max-width: 200px; /* Maksymalna szerokość przycisków */
-    box-sizing: border-box; /* Upewniamy się, że padding i szerokość są odpowiednio zarządzane */
+	flex-grow: 1; /* Przycisk zajmuje dostępne miejsce */
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	padding: 1vw 2vw; /* Dynamiczne odstępy wewnętrzne */
+	background-color: #777;
+	transition: background-color 0.3s;
+	font-size: 2vw; /* Dynamiczna wielkość czcionki zależna od ekranu */
+	border-radius: 1vw; /* Zaokrąglenie przycisków */
+	min-width: 100px; /* Minimalna szerokość przycisków */
+	max-width: 200px; /* Maksymalna szerokość przycisków */
+	box-sizing: border-box; /* Upewniamy się, że padding i szerokość są odpowiednio zarządzane */
 }
 
 .stripe p:hover {
-    background-color: #999; /* Zmiana koloru przycisku po najechaniu */
+	background-color: #999; /* Zmiana koloru przycisku po najechaniu */
 }
 
 /* Opis wyświetlany pod przyciskiem */
 .category .back-des p {
-    display: none; /* Ukrywamy wszystkie opisy na początku */
-    background-color: #555;
-    padding: 1vw;
-    color: white;
-    text-align: center;
-    font-size: 2vw; /* Dynamiczna wielkość czcionki */
-    margin-top: 1vw;
-    max-width: 80vw; /* Ograniczenie szerokości opisu */
-    margin-left: auto;
-    margin-right: auto; /* Wyśrodkowanie tekstu pod przyciskami */
+	display: none; /* Ukrywamy wszystkie opisy na początku */
+	background-color: #555;
+	padding: 1vw;
+	color: white;
+	text-align: center;
+	font-size: 2vw; /* Dynamiczna wielkość czcionki */
+	margin-top: 1vw;
+	max-width: 80vw; /* Ograniczenie szerokości opisu */
+	margin-left: auto;
+	margin-right: auto; /* Wyśrodkowanie tekstu pod przyciskami */
 }
 
 .category .back-des p.active {
-    display: block; /* Wyświetlamy tylko aktywny opis */
+	display: block; /* Wyświetlamy tylko aktywny opis */
 }
 
 /* Stylowanie dla małych ekranów (520px - 768px) */
 @media (min-width: 520px) and (max-width: 768px) {
-    .stripe {
-        width: 90vw; /* Szerokość paska dostosowana do małych ekranów */
-        max-width: 100%; /* Upewniamy się, że pasek nie przekracza szerokości ekranu */
-        height: 2.5vw; /* Zmniejszona wysokość paska */
-        gap: 4vw; /* Większy odstęp między przyciskami */
-    }
+	.stripe {
+		width: 90vw; /* Szerokość paska dostosowana do małych ekranów */
+		max-width: 100%; /* Upewniamy się, że pasek nie przekracza szerokości ekranu */
+		height: 2.5vw; /* Zmniejszona wysokość paska */
+		gap: 4vw; /* Większy odstęp między przyciskami */
+	}
 
-    .stripe p {
-        font-size: 1vw; /* Zwiększona czcionka dla przycisków, aby były lepiej widoczne */
-        padding: 1.2vw 2vw; /* Większy padding na małych ekranach */
-    }
+	.stripe p {
+		font-size: 1vw; /* Zwiększona czcionka dla przycisków, aby były lepiej widoczne */
+		padding: 1.2vw 2vw; /* Większy padding na małych ekranach */
+	}
 
-    .category .back-des p {
-        font-size: 3vw; /* Zwiększony rozmiar tekstu w opisie */
-        padding: 2vw; /* Większe odstępy w opisie */
-        max-width: 85vw; /* Szerokość ramki na tekst proporcjonalna do paska */
-        margin-left: auto;
-        margin-right: auto;
-    }
+	.category .back-des p {
+		font-size: 3vw; /* Zwiększony rozmiar tekstu w opisie */
+		padding: 2vw; /* Większe odstępy w opisie */
+		max-width: 85vw; /* Szerokość ramki na tekst proporcjonalna do paska */
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
-
 
 /* Stylowanie dla średnich ekranów (768px - 1200px) */
 @media (min-width: 768px) and (max-width: 1200px) {
-    .stripe {
-        width: 70vw; /* Zmniejszamy szerokość paska na średnich ekranach */
-        max-width: 1000px; /* Maksymalna szerokość na średnich ekranach */
-        height: 6vw; /* Zwiększona wysokość paska */
-        gap: 2.5vw; /* Zwiększenie odstępów między przyciskami */
-    }
+	.stripe {
+		width: 70vw; /* Zmniejszamy szerokość paska na średnich ekranach */
+		max-width: 1000px; /* Maksymalna szerokość na średnich ekranach */
+		height: 6vw; /* Zwiększona wysokość paska */
+		gap: 2.5vw; /* Zwiększenie odstępów między przyciskami */
+	}
 
-    .stripe p {
-        font-size: 1.8vw; /* Trochę większy tekst na średnich ekranach */
-        padding: 0.8vw 1.5vw; /* Zmniejszone odstępy */
-        max-width: 180px; /* Ograniczamy szerokość przycisków */
-    }
+	.stripe p {
+		font-size: 1.8vw; /* Trochę większy tekst na średnich ekranach */
+		padding: 0.8vw 1.5vw; /* Zmniejszone odstępy */
+		max-width: 180px; /* Ograniczamy szerokość przycisków */
+	}
 
-    .category .back-des p {
-        font-size: 30px; /* Mniejszy rozmiar tekstu opisu */
-        padding: 1vw;
-        max-width: 70vw; /* Zmniejszenie szerokości opisu */
-    }
+	.category .back-des p {
+		font-size: 30px; /* Mniejszy rozmiar tekstu opisu */
+		padding: 1vw;
+		max-width: 70vw; /* Zmniejszenie szerokości opisu */
+	}
 }
 
 /* Stylowanie dla dużych ekranów (powyżej 1200px) */
 @media (min-width: 1200px) {
-    .stripe {
-        width: 60vw; /* Zmniejszamy szerokość paska na bardzo dużych ekranach */
-        height: 5vw; /* Zmniejszenie wysokości na dużych ekranach */
-        gap: 9vw; /* Większy odstęp między przyciskami na bardzo dużych ekranach */
-    }
+	.stripe {
+		width: 60vw; /* Zmniejszamy szerokość paska na bardzo dużych ekranach */
+		height: 5vw; /* Zmniejszenie wysokości na dużych ekranach */
+		gap: 9vw; /* Większy odstęp między przyciskami na bardzo dużych ekranach */
+	}
 
-    .stripe p {
-        font-size: 1.2vw; /* Dodatkowe zmniejszenie tekstu na bardzo dużych ekranach */
-        padding: 1vw 2vw; /* Poprawiony padding, aby tekst się nie zacinał */
-        max-width: 220px; /* Zwiększenie maksymalnej szerokości przycisków na większych ekranach */
-    }
+	.stripe p {
+		font-size: 1.2vw; /* Dodatkowe zmniejszenie tekstu na bardzo dużych ekranach */
+		padding: 1vw 2vw; /* Poprawiony padding, aby tekst się nie zacinał */
+		max-width: 220px; /* Zwiększenie maksymalnej szerokości przycisków na większych ekranach */
+	}
 
-    .category .back-des p {
-        font-size: 34px; /* Mniejszy tekst dla opisu */
-        max-width: 60vw; /* Zmniejszenie szerokości opisu na bardzo dużych ekranach */
-    }
+	.category .back-des p {
+		font-size: 34px; /* Mniejszy tekst dla opisu */
+		max-width: 60vw; /* Zmniejszenie szerokości opisu na bardzo dużych ekranach */
+	}
 }
-
 
 /* Stylowanie dla małych ekranów */
 @media (max-width: 767px) {
-    .stripe {
-        width: 90vw; /* Szerokość paska na małych ekranach */
-        max-width: 100%; /* Upewniamy się, że nie będzie przekroczenia szerokości */
-        height: auto; /* Pasek będzie mieć automatyczną wysokość */
-    }
+	.stripe {
+		width: 90vw; /* Szerokość paska na małych ekranach */
+		max-width: 100%; /* Upewniamy się, że nie będzie przekroczenia szerokości */
+		height: auto; /* Pasek będzie mieć automatyczną wysokość */
+	}
 
-    .stripe p {
-        font-size: 4vw; /* Większa czcionka na małych ekranach */
-        padding: 2vw 1.5vw; /* Zwiększone odstępy wewnętrzne w pionie, aby zwiększyć wysokość przycisków */
-        min-width: auto; /* Pozwalamy przyciskom na zmniejszanie szerokości */
-        max-width: none; /* Brak maksymalnej szerokości */
-    }
+	.stripe p {
+		font-size: 4vw; /* Większa czcionka na małych ekranach */
+		padding: 2vw 1.5vw; /* Zwiększone odstępy wewnętrzne w pionie, aby zwiększyć wysokość przycisków */
+		min-width: auto; /* Pozwalamy przyciskom na zmniejszanie szerokości */
+		max-width: none; /* Brak maksymalnej szerokości */
+	}
 
-    .category .back-des p {
-        font-size: 16px; /* Większy tekst opisu na małych ekranach */
-        padding: 1vw;
-        max-width: 90vw; /* Zmniejszamy szerokość opisu na małych ekranach */
-    }
+	.category .back-des p {
+		font-size: 16px; /* Większy tekst opisu na małych ekranach */
+		padding: 1vw;
+		max-width: 90vw; /* Zmniejszamy szerokość opisu na małych ekranach */
+	}
 }
-
 
 .squares {
 	display: grid;
@@ -366,8 +364,6 @@ section {
 	gap: 30px;
 	height: 100vh;
 }
-
-
 
 .top-left,
 .top-right,
@@ -539,17 +535,17 @@ section {
 	height: 55%;
 	background-color: #135;
 }
-.image1{
+.image1 {
 	background-image: url('../img/Zuza.jpg');
 	background-size: cover;
 	background-position: center;
 }
-.image2{
+.image2 {
 	background-image: url('../img/Lipkowski.JPG');
 	background-size: cover;
 	background-position: center;
 }
-.image4{
+.image4 {
 	background-image: url('../img/Pimpek.JPG');
 	background-size: cover;
 	background-position: center;
@@ -681,7 +677,7 @@ section {
 		height: 400px;
 		line-height: 400px;
 	}
-	
+
 	.text {
 		font-size: 45px;
 	}
@@ -788,9 +784,9 @@ section {
 		}
 	}
 
-	.partner-logo{
-		width: 80px;
-		height: 80px;
+	.partner-logo {
+		width: 25vw;
+		height: 25vw;
 	}
 }
 
